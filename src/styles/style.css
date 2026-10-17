@@ -1,0 +1,356 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background-color: #f3f4f6;
+}
+
+label,
+select {
+  font-size: 1rem;
+}
+
+select {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+  background-color: #fff;
+}
+
+#cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgb(15 23 42 / 8%);
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  color: #1d4ed8;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.search-section {
+  border: 1px solid #f8f8fa;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.search-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #1d4ed8;
+}
+
+#search-form {
+  display: flex;
+  gap: 1rem;
+}
+
+#search-form input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+}
+
+#search-form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  background-color: #1d4ed8;
+  color: #fff;
+  cursor: pointer;
+}
+
+.usuario {
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  background-color: rgb(212, 244, 247);
+  padding: 1rem;
+}
+
+.contact-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  background-color: #1d4ed8;
+  color: #fff;
+  cursor: pointer;
+}
+
+.todo_container {
+  border: 1px solid #f8f8fa;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.todo_title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #1d4ed8;
+}
+
+#todo_form {
+  display: flex;
+  gap: 1rem;
+}
+
+#todo_form input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+}
+
+#todo_form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  background-color: #1d4ed8;
+  color: #fff;
+  cursor: pointer;
+}
+
+#task_list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.task_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+  background-color: #fff;
+  margin-bottom: 0.5rem;
+  padding: 1.5rem;
+}
+
+.delete_button {
+  background-color: #1d4ed8;
+  padding: 0.5rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.shopping {
+  border: 1px solid #f8f8fa;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.shopping-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.products-container {
+  flex: 1;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+  background-color: #fff;
+  padding: 1.5rem;
+}
+
+.cart-container {
+  flex: 1;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+  background-color: #fff;
+  padding: 1.5rem;
+}
+
+.products_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.produdct-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+  background-color: #d3f4f8;
+  margin-bottom: 0.5rem;
+  padding: 1.5rem;
+}
+
+.add-to-cart {
+  background-color: #1d4ed8;
+  padding: 0.5rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+  background-color: #d3f4f8;
+  margin-bottom: 0.5rem;
+  padding: 1.5rem;
+}
+
+.delete_card_button {
+  background-color: #1d4ed8;
+  padding: 0.5rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.pay_button {
+  background-color: #10b981;
+  padding: 0.5rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.pay_button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+#cart-total {
+  font-weight: bold;
+  color: #1d4ed8;
+  font-size: 1.25rem;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.new_product_button {
+  background-color: #1d4ed8;
+  padding: 0.5rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+.new_product_modal {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+.new_product_modal:not([open]) {
+  display: none;
+}
+
+
+.new_product_title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #1d4ed8;
+  text-align: center;
+}
+
+.new_product_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.new_product_modal input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+}
+
+.new_product_modal input[type="number"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+}
+
+.save_button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  background-color: #1d4ed8;
+  color: #fff;
+  cursor: pointer;
+}
+
+.close_button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  background-color: #ef4444;
+  color: #fff;
+  cursor: pointer;
+}
